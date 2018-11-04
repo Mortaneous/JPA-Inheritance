@@ -16,11 +16,15 @@ public class App {
 		Mammal m1 = new Mammal("Lion", 4);
 		Mammal m2 = new Mammal("Dolphin", 0);
 		Mammal m3 = new Mammal("Ape", 2);
+		Reptile r1 = new Reptile("Snake", Reptile.MOTION_SLITHER);
+		Reptile r2 = new Reptile("Crocodile", Reptile.MOTION_CRAWL);
 		
 		save(b1);
-		save(b2);
-		save(m1);
+		save(r1);
 		save(m2);
+		save(m1);
+		save(r2);
+		save(b2);
 		save(m3);
 
 		entityManager.close();
