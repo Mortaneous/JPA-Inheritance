@@ -11,8 +11,8 @@ public class App {
 	private static EntityManager entityManager = entityManagerFactory.createEntityManager();
 
 	public static void main(String[] args) {
-		Bird b1 = new Bird("Eagle", true);
-		Bird b2 = new Bird("Chicken", false);
+		Bird b1 = new Bird("Eagle", Bird.CAN_FLY);
+		Bird b2 = new Bird("Chicken", Bird.CANNOT_FLY);
 		Mammal m1 = new Mammal("Lion", 4);
 		Mammal m2 = new Mammal("Dolphin", 0);
 		Mammal m3 = new Mammal("Ape", 2);
